@@ -1,1 +1,8 @@
-<ngx-monaco-editor [options]="editorConfig" class="height-100" [(ngModel)]="model"></ngx-monaco-editor>
+<style>
+  .editor-wrapper {
+    height: 20rem !important;
+    width: 50rem !important;
+  }
+</style>
+<!-- [(ngModel)]="model" (init)="registerEditorEvtListeners($event)" -->
+<ngx-monaco-editor [options]="editorConfig" class="editor-wrapper"></ngx-monaco-editor>

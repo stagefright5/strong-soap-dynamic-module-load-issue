@@ -5,12 +5,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonacoComponent implements OnInit {
 
-  model;
-
-  editorConfig = {
+  editorConfig: monaco.editor.IEditorConstructionOptions = {
     language: 'typescript',
     mouseWheelZoom: true,
-    scrollBeyondLastLine: true
+    scrollBeyondLastLine: true,
+    theme: 'vs-dark'
   }
 
   constructor() { }
