@@ -37,7 +37,6 @@
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
-    "lib": "1.0.0",
     "@angular/animations": "~9.1.13",
     "@angular/common": "~9.1.13",
     "@angular/compiler": "~9.1.13",
