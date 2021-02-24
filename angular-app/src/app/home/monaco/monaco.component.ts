@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './monaco.component.html',
 })
 export class MonacoComponent implements OnInit {
-
+  code = "//ssss"
   editorConfig: monaco.editor.IEditorConstructionOptions = {
     language: 'typescript',
     mouseWheelZoom: true,
@@ -15,6 +15,10 @@ export class MonacoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  initEditor(editor: MonacoStandaloneEditor) {
+    console.log(editor);
   }
 
 }

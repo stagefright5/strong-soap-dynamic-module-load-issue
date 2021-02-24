@@ -5,4 +5,4 @@
   }
 </style>
 <!-- [(ngModel)]="model" (init)="registerEditorEvtListeners($event)" -->
-<ngx-monaco-editor [options]="editorConfig" class="editor-wrapper"></ngx-monaco-editor>
+<ngx-monaco-editor [options]="editorConfig" [(ngModel)]="code" (init)="initEditor($event)" class="editor-wrapper"></ngx-monaco-editor>
