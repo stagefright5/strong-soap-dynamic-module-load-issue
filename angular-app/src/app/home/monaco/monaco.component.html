@@ -1,8 +1,16 @@
 <style>
-  .editor-wrapper {
-    height: 20rem !important;
-    width: 50rem !important;
-  }
+  h1 {
+  margin: 15px;
+  color: darkblue;
+  height: 37px;
+}
+.editor-container {
+  height: calc(100% - 60px);
+  margin: 15px;
+}
+
 </style>
-<!-- [(ngModel)]="model" (init)="registerEditorEvtListeners($event)" -->
-<ngx-monaco-editor [options]="editorConfig" [(ngModel)]="code" (init)="initEditor($event)" class="editor-wrapper"></ngx-monaco-editor>
+<h1>ngx-monaco-editor example</h1>
+<div class="editor-container">
+	<ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (init)="editorInit($event)"></ngx-monaco-editor>
+</div>
