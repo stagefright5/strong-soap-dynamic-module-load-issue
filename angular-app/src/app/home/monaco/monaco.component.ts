@@ -41,13 +41,14 @@ export class MonacoComponent {
   }
 
   editorInit(editor: MonacoStandaloneCodeEditor) {
+    console.log('THIS IS NOT GETTING LOGGED!!', editor)
     // monaco.editor.setTheme('vs');
-    editor.setSelection({
-      startLineNumber: 1,
-      startColumn: 1,
-      endColumn: 50,
-      endLineNumber: 3
-    });
+    // editor.setSelection({
+    //   startLineNumber: 1,
+    //   startColumn: 1,
+    //   endColumn: 50,
+    //   endLineNumber: 3
+    // });
   }
 
   getCode() {
